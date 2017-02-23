@@ -84,17 +84,11 @@
     margin: 10px 0;
     width: 100%;
     height: 30%
-
 }
 
-ol {
-    width: 100%;
-    li {
-        width: 30%;
-        height: 50px;
-        margins: 2%;
-        background-color: powderblue;
-    }
+li {
+    display: inline-block;
+    width: 30%
 }
 
 
