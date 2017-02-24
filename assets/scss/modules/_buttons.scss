@@ -80,10 +80,11 @@ img,
 }
 
 .card1 {
-    width: 48%;
+    width: 30%;
     margin: 0 1% 20px;
     cursor: pointer;
-    background: white;
+    background: red;
+    display: inline-block;
 
     .card-content {
         padding: 10px 30px 20px;
