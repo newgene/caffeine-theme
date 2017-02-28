@@ -57,7 +57,11 @@
     max-width: 100%;
     p {
         margin: 0 px;
-        font-size: 14px;
+        font-size: $unit;
+    }
+    h2 {
+        margin: 0px;
+        font-size: $unit * 1.5;
     }
     a {
         h1 {
@@ -79,8 +83,6 @@
         }
     }
 }
-
-
 
 
 
