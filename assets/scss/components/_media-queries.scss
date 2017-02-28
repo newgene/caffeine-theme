@@ -108,6 +108,14 @@
         margin: 2% 20%;
         height: 100px
     }
+    .profile {
+        h2 {
+            margin: 0px
+        }
+        p {
+            margin: 0px
+        }
+    }
 }
 @media all and (max-width: 700px) {
     .container-wrapper {
