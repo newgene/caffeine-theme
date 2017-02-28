@@ -118,6 +118,9 @@
             font-size: $unit * 0.8
         }
     }
+    .profile-body {
+        margin: 1px;
+    }
 }
 @media all and (max-width: 700px) {
     .container-wrapper {
