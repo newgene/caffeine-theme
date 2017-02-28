@@ -110,10 +110,12 @@
     }
     .profile {
         h2 {
-            margin: 0px
+            margin: 0px;
+            font-size: $unit * 1.5
         }
         p {
-            margin: 0px
+            margin: 0px;
+            font-size: $unit * 0.8
         }
     }
 }
