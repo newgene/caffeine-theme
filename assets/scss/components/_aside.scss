@@ -61,6 +61,7 @@
     h2 {
         margin: 20px 0px;
         font-size: $unit * 1.7;
+        font-weight: bold;
     }
     a {
         h1 {
@@ -79,6 +80,9 @@
             width: 112px;
             border: 2px solid $primary-color;
             @include shadow(2);
+        }
+        p {
+            font-size: $unit * 1.5;
         }
     }
     .profile-body {
