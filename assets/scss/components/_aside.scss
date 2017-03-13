@@ -29,7 +29,6 @@
         font-weight: $font-weight-thin;
         text-align: center;
         color: $gray-lightest;
-        @include font-shadow;
         @include center-absolute;
         @include background-filter;
     }
