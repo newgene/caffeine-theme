@@ -81,15 +81,16 @@
             border: 2px solid $primary-color;
             @include shadow(2);
         }
-        p {
-            font-size: $unit * 1.5;
-        }
     }
     .profile-body {
         margin-bottom: 1%
     }
 }
-
+.open-link {
+    p {
+        font-size: $unit * 1.5;
+    }
+}
 .navigation {
     .links {
         margin: 0;
