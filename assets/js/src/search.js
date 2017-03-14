@@ -53,21 +53,9 @@ $(function() {
         return $popularTags.hide();
     };
 
-    $.ajax({
-      url:'https://api.rss2json.com/v1/api.json?rss_url=http%3A%2F%2Fmygene.info%2Frss%2F',
-      dataType: 'jsonp', // Notice! JSONP <-- P (lowercase)
-      success:function(json){
-        rss_doc = json2xml(json);
-        console.log(rss_doc);
-      },
-      error:function(){
-        alert("Error");
-      }      
-    });
-
     return $searchField.ghostHunter({
         results: "#search-results",
-        rss: rss_doc,
+        rss: 'http://biothings.io:9000/tag/mygene-info/rss',
         zeroResultsInfo: false,
         onKeyUp: true,
         displaySearchInfo: true,
