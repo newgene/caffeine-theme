@@ -16,6 +16,7 @@ $(function() {
 
     return $searchField.ghostHunter({
         results: "#search-results",
+        rss: "http://biothings.io:9000/tag/mygene-info/rss/",
         zeroResultsInfo: false,
         onKeyUp: true,
         displaySearchInfo: true,
