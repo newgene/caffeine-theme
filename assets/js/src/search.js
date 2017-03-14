@@ -20,7 +20,7 @@ $(function() {
       dataType: 'jsonp', // Notice! JSONP <-- P (lowercase)
       success:function(json){
         rss_doc = json;
-        console.log("Success rss");
+        console.log(rss_doc);
       },
       error:function(){
         alert("Error");
