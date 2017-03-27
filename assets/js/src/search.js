@@ -55,7 +55,6 @@ $(function() {
 
     return $searchField.ghostHunter({
         results: "#search-results",
-        rss: 'http://mygene.info/rss/',
         zeroResultsInfo: false,
         onKeyUp: true,
         displaySearchInfo: true,
