@@ -96,7 +96,7 @@ $(function() {
         }
     });
 
-    $homeButton.click(_defaultLogoNavEvent);
+//    $homeButton.click(_defaultLogoNavEvent);
     $(".open-link").click(_defaultLogoNavEvent);
 
     // "Home" page setup
