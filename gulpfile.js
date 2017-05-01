@@ -52,6 +52,7 @@ src = {
             "assets/vendor/prism/prism.js",
             "assets/vendor/prism/components/prism-python.js",
             "assets/vendor/prism/components/prism-http.js",
+            "assets/vendor/prism/components/prism-bash.js",
             "assets/vendor/prism/plugins/autolinker/prism-autolinker.js",
             "assets/vendor/toastr/toastr.min.js",
             "assets/vendor/store-js/store.min.js"
@@ -60,7 +61,8 @@ src = {
     css: {
         main: "assets/css/" + dist.name + ".css",
         vendor: [
-            "assets/vendor/prism/themes/prism-okaidia.css",
+            //"assets/vendor/prism/themes/prism-okaidia.css",
+            "assets/vendor/prism/themes/prism.css",
             "assets/vendor/prism/plugins/autolinker/prism-autolinker.css"
         ]
     },
