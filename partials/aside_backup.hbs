@@ -8,7 +8,7 @@
             </header>
             {{#if @blog.logo}}
             <div class="profile-logo">
-                <a id="avatar-link" class="open-link" title="What's new with {{@blog.title}}" href="{{@blog.url}}/#open">
+                <a id="avatar-link" class="open-link" title="Link to homepage for {{@blog.title}}" href="{{@blog.url}}/#open">
                     <img src="{{@blog.logo}}" alt="{{@blog.title}} avatar" class="avatar rounded hvr-buzz-out" />
                 </a>
             </div>
@@ -25,7 +25,7 @@
                 <hr class="divider long" />
                 <h2>{{@blog.description}}</h2>
                 <hr class="divider short" />
-
+                    <div class="call-to-action-container">
                         <li class="card1">
                             <div class="card-container">
                                 <div class="card-body">
@@ -50,54 +50,23 @@
                                     </a>
                                 </div>
                             </div>
-                        </li>            
-                </div>
-            <div class="handwritten">
-                <img src="\assets\img\buildapis.png"></img>
-            </div>
-                            <li class="mycardbtns">
-                                <a href="http://mygene.info" target="_blank" title="MyGene.info">
-                                    <img class="default" src="/assets/img/icons/mygene.png"> </img>
-                                    <img class="hover" src="/assets/img/icons/mygene_on.png"> </img>
-                                </a>
-                            </li>
-                            <li class="mycardbtns">
-                                <a href="http://myvariant.info" target="_blank" title="MyChem.info">
-                                    <img class="default" src="/assets/img/icons/myvariant.png"></img>
-                                    <img class="hover" src="/assets/img/icons/myvariant_on.png"></img>
-                                </a>
-                            </li>
-                            <li class="mycardbtns">
-                                <a href="http://mychem.info" target="_blank" title="MyChem.info">
-                                    <img class="default" src="/assets/img/icons/mychem.png"> </img>
-                                    <img class="hover" src="/assets/img/icons/mychem_on.png"> </img>
-                                </a>
-                            </li>
-            <p></p>
-            <div class="handwritten">
-                <a href="/showcase/" title="showcase">
-                <img class="default" src="/assets/img/and more.png"> </img>
-                <img class="hover" src="/assets/img/and more_on.png"> </img>
-                </a>
-            </div>
-            <hr class="divider long" />
-            <div class="newsbox">
-                    <img class="subimgbox" src="/assets/img/latest-news.png"> </img>
-                    <div class="subnewsbox">
-                    {{#foreach posts}}
-                        {{#if @last}}
-                        <a href="{{url}}"><time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>: {{{title}}}: {{excerpt words="15"}} <a class="read-more" href="{{url}}">&raquo;</a>
-                        </a></a>
-                        {{/if}}
-                    {{/foreach}}
+                        </li>
+                        <li class="card1">
+                            <div class="card-container">
+                                <div class="card-body">
+                                    <a href="/showcase/" title="link to registry">
+                                        <div class="card-content">
+                                            <h2>Showcase</h2>
+                                            <p class="description">A collection of Live BioThings APIs</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
                     </div>
-            </div>
 
-            <p></p>
-            <div class="socmenu">    
-                {{> social}}
             </div>
-
+            {{> social}}
         </div>
     </div>
 </aside>
