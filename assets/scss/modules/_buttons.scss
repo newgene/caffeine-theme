@@ -86,7 +86,7 @@ img,
     cursor: pointer;
     background: #a5a5a4;
     display: inline-block;
-    float: left;
+    float: center;
     p {
         color: white;
         font-size: 1em;
@@ -123,6 +123,48 @@ img,
         transform: translateY(-5px) !important;
     }
 }
+
+.mycardbtns {
+    width: 20%;
+    height: auto;
+    cursor: pointer;
+    display: inline-block;
+    border-style:hidden;
+    float: center;
+
+    img {
+    border-radius: 6px;
+    border-style: hidden;
+    max-width: 100%;
+    height: auto;
+    @include transition(all 250ms);
+    }
+    
+    img.default {
+        display: inherit;
+        border-style:hidden;
+        @include shadow(2);
+    }
+    
+    img.hover {
+        display: none;
+        border-style:hidden;
+    }
+
+    &:hover {
+        img.hover {
+            display: inherit;
+            border-style:hidden;
+        }
+        img.default {
+            display: none;
+            border-style:hidden;
+        }
+    }
+}
+
+
+
 
 ul {
     &.share-buttons {

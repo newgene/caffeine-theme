@@ -80,12 +80,82 @@
         img {
             width: 112px;
             border: 2px solid $primary-color;
-            @include shadow(2);
+            
         }
     }
     .profile-body {
         margin-bottom: 1%
     }
+}
+
+.handwritten {
+    max-width: 100%;
+        img {
+            display:inline-block;
+            width: 300px;
+            border-style:hidden;
+        }
+    img.default {
+        display:inline-block;
+        width: 300px;
+        border-style:hidden;
+    }
+    
+    img.hover {
+        display: none;
+        width: 300px;
+        border-style:hidden;
+    }
+
+    &:hover {
+        img.hover {
+            display:inline-block;
+            width: 300px;
+            border-style:hidden;
+            
+        }
+        img.default {
+            display: none;
+            width: 300px;
+            border-style:hidden;
+        }
+    }
+
+}
+
+.newsbox{
+    display: inline-block;
+    max-width: 600px;
+    img.subimgbox{
+        display: inline-block;
+        vertical-align: top;
+        max-width: 100px;
+        max-height: 65px;        
+    }
+    .subnewsbox{
+        display: inline-block;
+        text-align:left;
+        vertical-align: text-top;
+        max-width: 400px;
+        max-height: 65px;
+        overflow: hidden;
+        a {
+            color:$slate-white;
+            &:hover {
+                    color: $pre-hover-color ;
+            }
+        }
+    }
+
+
+}
+
+.socmenu {
+    max-width: 100%;
+    display:inline-block;
+    border-style:hidden;
+    float:center;
+    margin-left: -40px;
 }
 
 .navigation {
