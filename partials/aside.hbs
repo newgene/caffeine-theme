@@ -62,7 +62,7 @@
                                 </a>
                             </li>
                             <li class="mycardbtns">
-                                <a href="http://myvariant.info" target="_blank" title="MyChem.info">
+                                <a href="http://myvariant.info" target="_blank" title="MyVariant.info">
                                     <img class="default" src="/assets/img/icons/myvariant.png"></img>
                                     <img class="hover" src="/assets/img/icons/myvariant_on.png"></img>
                                 </a>
@@ -85,7 +85,7 @@
                     <img class="subimgbox" src="/assets/img/latest-news.png"> </img>
                     <div class="subnewsbox">
                     {{#foreach posts}}
-                        {{#if @last}}
+                        {{#if @first}}
                         <a href="{{url}}"><time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>: {{{title}}}: {{excerpt words="15"}} <a class="read-more" href="{{url}}">&raquo;</a>
                         </a></a>
                         {{/if}}
